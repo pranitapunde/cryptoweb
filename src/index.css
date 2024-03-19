@@ -1,0 +1,477 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+  width: 100%;
+  height: 60px;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+
+}
+nav ul {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(1, 1, 39);
+  font-weight: 600;
+}
+
+.cry {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(1, 1, 39);
+  text-transform: uppercase;
+  
+}
+.hidemob{
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+nav .hidemob:hover {
+  color: rgb(27, 25, 25);
+  border-bottom: 2px solid rgb(3, 3, 53);
+}
+
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 10;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.945);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+
+}
+
+.display-none {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 10;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.945);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.sidebar li {
+  width: 100%;
+  height: 8%;
+
+}
+
+.sidebar a {
+  width: 70%;
+}
+
+.sidebar a:hover {
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+
+#croshide a:hover {
+  display: none;
+}
+
+#menu-butn {
+  display: none;
+}
+
+/* ============================================== */
+
+.header {
+  width: 100%;
+  height: 300px;
+  background-image: url(./assets/image/im-22.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+ /* form container */
+.container {
+  width: 70%;
+  height: 250px;
+} 
+
+/* cardcontainer */
+.cardcontainer {
+  width: 100%;
+  max-height: 100%;
+  background: #000428;
+  padding-left: 70px;
+  background: -webkit-linear-gradient(to top, #004e92, #000428);
+  background: linear-gradient(to top, #004e92, #000428);
+}
+
+.headline {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.line {
+  width: 80%;
+}
+
+.coinss {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lizard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* condition */
+.no {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrong {
+  color: red;
+}
+
+
+/*viewmore*/
+
+.container-more {
+  width: 100%;
+  height: auto;
+  background: -webkit-linear-gradient(to top, #004e92, #000428);
+  background: linear-gradient(to top, #004e92, #000428);
+  /* background-color: rgb(197, 197, 255); */
+  padding: 50px;
+  
+}
+.imgmore {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+
+}
+.imgmore img {
+  width: 300px;
+  padding-left: 10px;
+}
+.nametitle {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  /* background-color: aliceblue; */
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: start;
+  justify-content:center;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.nametitle h5 {
+  font-size: 28px;
+}
+.price {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.doller {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+
+}
+.doller h6{
+  font-weight: 600;
+}
+.rupees h6{
+  font-weight: 600;
+}
+.rupees {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.discription {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  /* border: 1px solid black; */
+  padding-left: 10px;
+
+}
+
+/* Allcoins */
+.allcoins {
+  width: 100%;
+  max-height: 100%;
+  background: #000428;
+  background: -webkit-linear-gradient(to top, #004e92, #000428);
+  background: linear-gradient(to top, #004e92, #000428);
+
+}
+.allcoinheading {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allcoinheading h2 {
+  color: wheat;
+}
+
+.allcard {
+  width: 100%;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Loginpage */
+.Loginpage{
+  width: 100%;
+  height: 90vh;
+  background: #000428;
+  background: -webkit-linear-gradient(to top, #004e92, #000428);
+  background: linear-gradient(to top, #004e92, #000428);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.loginbox{
+  width: 300px;
+  height: 400px;
+  background-color: white;
+}
+.login-Heading{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  font-weight: 700;
+  padding-top: 20px;
+}
+.formSection{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/*  About-section*/
+.Aboutpage{
+  width: 100%;
+  height: 90vh;
+  background: -webkit-linear-gradient(to top, #004e92, #000428);
+  background: linear-gradient(to top, #004e92, #000428);
+}
+.minicontainer{
+  width: 100%;
+  height: 250px;
+  display: flex;
+}
+.left-section{
+  width: 30%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-section h2{
+  font-size: 30px;
+  color: gray;
+  
+}
+.right-section{
+  width: 70%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.l-side{
+  width: 40%;
+  height: 200px;
+
+}
+.r-side{
+  width: 40%;
+  height: 200px;
+}
+.Aboout,
+.Support ,
+.careers ,
+.News h6 , p{
+  color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FooterSection */
+
+@media only screen and (max-width: 600px) {
+
+  #menu-butn {
+    display: block;
+
+  }
+  .threeline{
+    margin-right: 20px;
+  }
+  .cry {
+    font-size: 18px;
+    padding-left:10px;
+  }
+  .hidemob {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    height: auto;
+  }
+  .menu {
+    display: none;
+  }
+  #menu {
+    display: inline;
+    color: wheat;
+  }
+  .heading {
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    padding-inline: 10px;
+  }
+  .heading h3 {
+    font-size: 20px;
+  }
+  /* container coin image */
+
+  .container{
+    width: 100%;
+    height: auto;
+  }
+  .container img{
+    width: 250px;
+  }
+  .cardcontainer{
+    padding-left: 0;
+  }
+  
+  }
+
