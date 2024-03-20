@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import MoreDetails from '../components/moreDetails'
+import MoreDetails from '../components/MoreDetails'
 import { useDispatch, useSelector } from 'react-redux'
 import { MoreDetailCoinData } from '../features/coins/coinSlice';
 import { useParams } from 'react-router-dom';
