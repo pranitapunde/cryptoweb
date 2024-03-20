@@ -1,44 +1,46 @@
 import React from 'react'
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material'
 
-const SearchCoinCard = ( {sCoin}) => {
+const SearchCoinCard = ({ sCoin }) => {
     return (
-        <Grid item lg={4} md={3} sm={12}>
+        <Grid item lg={4} md={3} sm={12} xs={6}>
 
-            <Card className='coinss' 
-            sx={{
-                height: {
-                    xs: 300, 
-                    sm: 600,
-                    md: 900,
-                    lg: 300,
-                    xl: 300,
+            <Card className='coinss'
+                sx={{
 
-                }, width: {
-                    xs: 175,
-                    sm: 600,
-                    md: 900,
-                    lg: 300,
-                    xl: 450,
-                }, backgroundColor: "light"
-            }} >
-                
+                    height: {
+                        xs: 250,
+                        sm: 600,
+                        md: 900,
+                        lg: 300,
+                        xl: 300,
+
+                    }, width: {
+                        xs: 190,
+                        sm: 600,
+                        md: 900,
+                        lg: 300,
+                        xl: 450,
+                    }, backgroundColor: "light",
+                 
+                }}>
+
                 <CardMedia
-                    sx={{ height: 150, width: 140, marginTop: 2 }}
+                    sx={{ height: 150, width: 100 , marginTop: 2 }}
                     // image='https://media.istockphoto.com/id/1270779408/vector/money.jpg?s=1024x1024&w=is&k=20&c=XXpN3gM3bnZzf9LMP4MSmCQOKoHx79ANsxsbHFJrcBI='
                     image={sCoin.large}
                     title="green iguana"
                 />
                 <CardContent className='lizard'>
 
-                    <Typography gutterBottom variant="h5" component="div">
-                    {sCoin.name}
+                    <Typography gutterBottom variant="h6" component="div">
+                        {sCoin.name}
                     </Typography>
 
                     <Typography variant="body2" color="text.secondary">
-                    {sCoin.symbol}
+                        {sCoin.symbol}
                     </Typography>
-                    
+
                 </CardContent>
 
                 <CardActions>

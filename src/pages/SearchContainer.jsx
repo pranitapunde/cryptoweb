@@ -63,8 +63,7 @@ const Search = () => {
         <h2> SEARCHICONS </h2>
       </div>
 
-
-      <Grid container sx={{ marginTop: "10px", paddingLeft: "55px" }} spacing={2}>
+      <Grid container sx={{ marginTop: "10px"  }} spacing={2}>
 
         {
           searchCoin.map((sCoin) => <SearchCoinCard key={sCoin.id} sCoin={sCoin} />)

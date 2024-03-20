@@ -4,7 +4,7 @@ import React from 'react'
 const AllcoinCard = ({allCoin}) => {
     return (
 
-        <Grid item lg={3} md={6} sm={12}>
+        <Grid item lg={3} md={6} sm={12} xs={4}>
 
             <Card className='allcard' sx={{ 
             display : "flex" , 
@@ -13,14 +13,14 @@ const AllcoinCard = ({allCoin}) => {
             flexDirection : "column",
             
             height: {
-                xs: 300, 
+                xs: 200, 
                 sm: 600,
                 md: 900,
                 lg: 300,
                 xl: 300,
             },
             width: {
-                xs: 175,
+                xs: 118,
                 sm: 600,
                 md: 900,
                 lg: 300,
@@ -31,10 +31,11 @@ const AllcoinCard = ({allCoin}) => {
                     sx={{ height: "50%", width: "40%"}}
                     image={allCoin.image} 
                 />
-                
+
                 <CardContent className='text' sx={{ width : "100%" , height : "50%"}}>
 
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="body1" align=
+                    'center' component="div">
                         {allCoin.name}
                     </Typography>
 

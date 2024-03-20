@@ -30,7 +30,7 @@ const CoinCard2 = ({ coin }) => {
                     title="green iguana"
                 />
                 <CardContent className='lizard'>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h6" component="div">
                         {name}
                     </Typography>
 
